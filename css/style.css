@@ -21,7 +21,7 @@ img {
   max-width: 100%;
 }
 a:hover {
-  color: #9300fc;
+  color: #96AAB0;
 }
 
 
@@ -51,7 +51,7 @@ HEADER
   text-decoration: none;
 }
 .header-menu a:hover{
-  color:  #9300fc;
+  color: #96AAB0;
 }
 
 /* button.header-name {
@@ -78,7 +78,7 @@ HEADER
   font-family: 'Inter', sans-serif;
   line-height: 140%;
   font-size: 24px;
-  background-color :#ecfc00;
+  background-color : #989EAE;
   font-weight: 300;
   opacity: 1;
   transition: opacity .5s;
