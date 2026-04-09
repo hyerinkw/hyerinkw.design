@@ -51,7 +51,7 @@ HEADER
   text-decoration: none;
 }
 .header-menu a:hover{
-  color: #96AAB0;
+  color: #a996b0;
 }
 
 /* button.header-name {
@@ -78,10 +78,11 @@ HEADER
   font-family: 'Inter', sans-serif;
   line-height: 140%;
   font-size: 24px;
-  background-color : #989EAE;
+  background-color : #eaff00;
   font-weight: 300;
   opacity: 1;
   transition: opacity .5s;
+  color: rgb(219, 219, 219);
 }
 
 .header-desc:hover{
