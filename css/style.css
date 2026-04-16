@@ -25,7 +25,7 @@ a:hover {
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 14px;
   text-align: center;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
@@ -107,6 +107,14 @@ GRID
   gap: 5vw;
   grid-template-columns: repeat(2, 46vw); /* (94 - 2) / 2 */
   grid-template-rows: repeat(8, 46vw);
+}
+
+
+.grid-1 {
+
+  display: block;
+  margin: 0 auto 3vw; /* 위아래 0, 좌우 auto */
+
 }
 .grid-item {
   width: 100%;
@@ -196,6 +204,8 @@ DESKTOP SIZE
     grid-template-columns: repeat(3, 26vw);
     grid-template-rows: repeat(5, 26vw);
   }
+
+
 
 }
 
