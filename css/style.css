@@ -205,8 +205,5 @@ DESKTOP SIZE
     grid-template-rows: repeat(5, 26vw);
   }
 
-.caption .name{ font-size: 9px; }
-.caption .date{ font-size: 9px; margin-top: 6px; }
-
 }
 
