@@ -79,15 +79,15 @@ HEADER
 
 .header-desc{
   padding: 30px;
-  width: 100%;
-  margin-top: 24px;   
+  width: 96%;
+  margin: 24px;   
   font-family: 'Inter', sans-serif;
   line-height: 140%;
   font-size: 24px;
   background-color : #4E7A86;
   font-weight: 300;
   opacity: 1;
-  transition: opacity .5s;
+  transition: opacity .8s;
   color: rgb(219, 219, 219);
 }
 
@@ -207,3 +207,27 @@ DESKTOP SIZE
 
 }
 
+/*
+Phone SIZE
+================================================ */
+
+@media (max-width: 599px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .header-desc{
+  padding: 30px;
+  width: 94%;
+  margin-top: 24px;   
+  font-family: 'Inter', sans-serif;
+  line-height: 140%;
+  font-size: 14px;
+  background-color : #4E7A86;
+  font-weight: 300;
+  opacity: 1;
+  transition: opacity .5s;
+  color: rgb(219, 219, 219);
+}
+}
