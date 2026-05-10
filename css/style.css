@@ -7,7 +7,10 @@ html {
 body {
   color: var(--text);
   background: var(--bg);
-  font-family: "Inter", sans-serif;
+  font-family: "Merriweather", serif;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
   transition: .5s;
   background-color: rgb(240, 240, 240);
 }
@@ -58,7 +61,7 @@ HEADER
   text-decoration: none;
 }
 .header-menu a:hover{
-  color: #b07ac4;
+  color: #333333;
 }
 
 /* button.header-name {
@@ -75,7 +78,10 @@ HEADER
   line-height: 1;
   color: var(--text);
   text-align: left;
-  font-family: 'Inter', sans-serif;
+  font-family: "Merriweather", serif;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 400;
 }
 
 .header-desc{
@@ -139,7 +145,7 @@ GRID
 .caption .name,
 .caption .date{
   margin: 0;
-  color: #8a8989;
+  color: #000000;
 }
 
 
@@ -189,6 +195,9 @@ DESKTOP SIZE
   .header-name {
     font-size: 2rem;
     font-weight: 400;
+      font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
     
   }
 
@@ -214,6 +223,9 @@ Phone SIZE
    .header-name {
     font-size: 1rem;
     font-weight: 400;
+    font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
     
   }
 
@@ -221,7 +233,10 @@ Phone SIZE
   padding: 30px;
   width: 94%;
   margin-top: 24px;   
-  font-family: 'Inter', sans-serif;
+   font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  font-weight: 300;
   line-height: 140%;
   font-size: 12px;
   font-weight: 300;
