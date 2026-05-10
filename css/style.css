@@ -219,6 +219,22 @@ DESKTOP SIZE
     grid-template-rows: repeat(5, 26vw);
   }
 
+    .header-desc{
+  padding: 30px;
+  width: 94%;
+  margin-top: 24px;   
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  font-weight: 300;
+  line-height: 140%;
+  font-size: 14px;
+  font-weight: 300;
+  opacity: 1;
+  transition: opacity .5s;
+  color: rgb(142, 141, 141);
+}
+
 }
 
 /*
