@@ -184,7 +184,7 @@ FOOTER
 }
 
 .footer-link a:hover {
-  color: #444444;                /* 글자색 (배경색과 대비되게 설정) */
+  color: #363636;                /* 글자색 (배경색과 대비되게 설정) */
     background-color: #ceff3d;    /* 배경색 (연두색) */
     padding: 5px 10px;            /* 배경이 글자보다 조금 더 크게 보이도록 여백 추가 */
     border-radius: 4px;           /* 모서리를 둥글게 (선택사항) */
