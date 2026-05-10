@@ -5,10 +5,11 @@ html {
   font-size: 100%;
 }
 body {
-color: var(--text);
+  color: var(--text);
   background: var(--bg);
   font-family: "Inter", sans-serif;
   transition: .5s;
+  background-color: rgb(240, 240, 240);
 }
 
 /*
@@ -17,15 +18,15 @@ COMMON
 p {
   line-height: 1.7;
 }
+
 img {
   max-width: 100%;
 }
 a:hover {
-  color: #96AAB0;
+  color: #b2c47a;
 }
 
 h1 {
-  font-size: 14px;
   text-align: center;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
@@ -57,7 +58,7 @@ HEADER
   text-decoration: none;
 }
 .header-menu a:hover{
-  color: #a996b0;
+  color: #b07ac4;
 }
 
 /* button.header-name {
@@ -67,33 +68,25 @@ HEADER
 } */
 
 .header-name{
-  display: block;
-  margin: 9 auto;
+  width: 94vw;
+  margin: 0 auto .5rem;
+  font-size: 8rem;
+  font-weight: 400;
   line-height: 1;
-  background: transparent;
-  border: 0;
   color: var(--text);
-  cursor: pointer;
-  
+  text-align: left;
+  font-family: 'Inter', sans-serif;
 }
 
 .header-desc{
-  padding: 30px;
-  width: 96%;
-  margin: 24px;   
-  font-family: 'Inter', sans-serif;
-  line-height: 140%;
-  font-size: 24px;
-  background-color : #4E7A86;
-  font-weight: 300;
+  width: 94vw;
+  margin: 0 auto 2rem;
+  padding: 0;
+  background: none;
+  color: #888;
+  font-size: 14px;
+  line-height: 1.6;
   opacity: 1;
-  transition: opacity .8s;
-  color: rgb(219, 219, 219);
-}
-
-.header-desc:hover{
-  opacity: 0;
-  pointer-events: none;
 }
 
 
@@ -146,7 +139,7 @@ GRID
 .caption .name,
 .caption .date{
   margin: 0;
-  color: #333;
+  color: #8a8989;
 }
 
 
@@ -194,8 +187,9 @@ DESKTOP SIZE
 ================================================ */
 @media (min-width: 600px) {
   .header-name {
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: 400;
+    
   }
 
   .grid {
@@ -217,17 +211,22 @@ Phone SIZE
     grid-template-rows: auto;
   }
 
+   .header-name {
+    font-size: 1rem;
+    font-weight: 400;
+    
+  }
+
   .header-desc{
   padding: 30px;
   width: 94%;
   margin-top: 24px;   
   font-family: 'Inter', sans-serif;
   line-height: 140%;
-  font-size: 14px;
-  background-color : #4E7A86;
+  font-size: 12px;
   font-weight: 300;
   opacity: 1;
   transition: opacity .5s;
-  color: rgb(219, 219, 219);
+  color: rgb(142, 141, 141);
 }
 }
