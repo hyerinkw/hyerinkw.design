@@ -59,7 +59,7 @@ HEADER
 }
 .header-menu a:hover {
     color: #000000;               
-    background-color: #ceff3d;  
+    background-color: #9ED6C0;  
     padding: 5px 10px;           
     border-radius: 2px;           
     transition: all 0.3s ease;  
@@ -185,7 +185,7 @@ FOOTER
 
 .footer-link a:hover {
   color: #000000;               
-    background-color: #ceff3d;    
+    background-color: #9ED6C0;    
     padding: 5px 10px;            
     border-radius: 2px;          
     transition: all 0.3s ease;    
