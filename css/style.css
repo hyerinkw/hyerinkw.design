@@ -26,7 +26,11 @@ img {
   max-width: 100%;
 }
 a:hover {
-  color: #9f57b3;
+    color: #3f3f3f;                /* 글자색 (배경색과 대비되게 설정) */
+    background-color: #ceff3d;    /* 배경색 (연두색) */
+    padding: 5px 8px;            /* 배경이 글자보다 조금 더 크게 보이도록 여백 추가 */
+    border-radius: 1px;           /* 모서리를 둥글게 (선택사항) */
+    transition: all 0.3s ease;    /* 부드러운 효과 (선택사항) */
 }
 
 h1 {
@@ -59,10 +63,13 @@ HEADER
   color: var(--text);
   text-decoration: none;
 }
-.header-menu a:hover{
-  color: #9f57b3
+.header-menu a:hover {
+    color: #444444;                /* 글자색 (배경색과 대비되게 설정) */
+    background-color: #ceff3d;    /* 배경색 (연두색) */
+    padding: 5px 10px;            /* 배경이 글자보다 조금 더 크게 보이도록 여백 추가 */
+    border-radius: 4px;           /* 모서리를 둥글게 (선택사항) */
+    transition: all 0.3s ease;    /* 부드러운 효과 (선택사항) */
 }
-
 /* button.header-name {
   font-size: 28px;
   font-weight: 300;
@@ -180,6 +187,7 @@ FOOTER
   display: block;
   margin-bottom: 0.5rem;
   font-size: 12px;
+ 
 }
 .copyright {
   text-align: center;
@@ -234,7 +242,7 @@ Phone SIZE
   padding: 30px;
   width: 94%;
   margin-top: 24px;   
-   font-style: normal;
+  font-style: normal;
   font-variation-settings:
     "wdth" 100;
   font-weight: 300;
