@@ -26,7 +26,7 @@ img {
   max-width: 100%;
 }
 a:hover {
-  color: #00eaff;
+  color: #9f57b3;
 }
 
 h1 {
@@ -60,7 +60,7 @@ HEADER
   text-decoration: none;
 }
 .header-menu a:hover{
-  color: #333333;
+  color: #9f57b3
 }
 
 /* button.header-name {
