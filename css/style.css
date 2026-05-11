@@ -12,7 +12,7 @@ body {
   font-variation-settings:
     "wdth" 100;
   transition: .5s;
-  background-color: rgb(240, 240, 240);
+  background-color:#fff;
 }
 
 /*
@@ -47,28 +47,21 @@ HEADER
   top: 16px;
   right: 16px;
   z-index: 9999;
-  font-size: 12px;
+  font-size: 16px;
   display: flex;
   gap: 8px;
   align-items: center;
 }
 
 .header-menu a{
-  color: var(--text);
+  color: rgb(0, 0, 0);
   text-decoration: none;
+  font-family: sans-serif;
 }
 .header-menu a:hover {
-    color: #000000;               
-    background-color: rgb(215, 239, 231);  
-    padding: 5px 10px;           
-    border-radius: 2px;           
-    transition: all 0.3s ease;  
+    color: #575656;               
 }
-/* button.header-name {
-  font-size: 28px;
-  font-weight: 300;
-  font-family: 'Inter', sans-serif;
-} */
+
 
 .header-name{
   width: 94vw;
@@ -181,14 +174,13 @@ FOOTER
   display: block;
   margin-bottom: 0.5rem;
   font-size: 12px;
+  color: rgb(116, 116, 116);
+  font-family: sans-serif;
 }
 
 .footer-link a:hover {
-  color: #000000;               
-    background-color:  rgb(215, 239, 231);    
-    padding: 5px 10px;            
-    border-radius: 2px;          
-    transition: all 0.3s ease;    
+    color: #000000;               
+
 }
 .copyright {
   text-align: center;
@@ -246,6 +238,17 @@ Phone SIZE
     grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
+
+  .header-menu{
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 9999;
+  font-size: 14px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
 
    .header-name {
     font-size: 1.5rem;
