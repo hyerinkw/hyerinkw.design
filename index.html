@@ -8,198 +8,170 @@
         <link rel="icon" href="./images/kim.png" type="image/png">
 
 
-    <!-- CSS -->
+ <!-- CSS -->
+       <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.3.2/luminous-basic.min.css">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+</head>
 
-	<body>
-        <header class="site-header">
-            <!-- 메뉴: 항상 오른쪽 위 고정 -->
-            <nav class="header-menu">
-              <a href="mailto:hyerinkw@gmail.com">Email</a>
-              <span></span>
-              <a href="">CV</a>
-              <span></span>
-            <a href="">Archive</a>
-            </nav>
-          
-   <header class="site-header">
 
-    <h1 class="header-name">
-        Hyerin Kim
-    </h1>
 
-    <p class="header-desc">
-        Hyerin Kim is designer<br>
-        BFA in Communication Design,<br>
-        Parsons School of Design and it's a STEM field
-    </p>
+<body>
 
+<div class="cursor" id="cursor"></div>
+
+<!-- HEADER -->
+<header>
+  <a class="logo" href="#">Hyerin Kim</a>
+  <nav>
+    <a href="#" class="on">Work</a>
+    <a href="mailto:hyerinkw@gmail.com">Email</a>
+    <a href="#">CV</a>
+    <a href="#">Archive</a>
+  </nav>
 </header>
-     
 
-        <main class="grid">
+<!-- INTRO -->
+<div class="intro">
+  <h1><em>Works</em></h1>
+  <div class="intro-meta">
+    Hyerin KW<br>
+    2024 – 2026
+  </div>
+</div>
 
-            
-                <a class="grid-big-top grid-gallery" href="images/video1.mp4" data-aos="fade-up">
 
-                    <video class="grid-item" autoplay muted loop playsinline>
-                        <source src="images/video1.mp4" type="video/mp4">
-                    </video>
 
-                    <div class="caption">
-                        <span class="name"></span>
-                        <span class="date">2026</span>
-                    </div>
-                </a>
-                
-            <a class="grid-gallery" href="images/book.GIF" data-aos="fade-up">
-                <img class="grid-item"
-                     src="images/img1-400.jpg"
-                     srcset="images/img1-400.jpg 400w,
-                             images/img1-800.jpg 800w"
-                     alt="The Window Between Us">
-              
-                <div class="caption">
-                  <span class="name"></span>
-                  <span class="date">2026</span>
-                </div>
-              </a>
+<!-- GRID -->
+<div class="work-grid">
+
+
+<!-- ROW 1: big left + small right -->
+  <div class="grid-row row-big-small">
+    <a class="item" href="" style="animation-delay:0.05s">
+      <div class="item-img ar-3-2">
+        <video autoplay muted loop playsinline>
+          <source src="./images/video1.mp4" type="video/mp4">
+        </video>
+        <span class="item-index">01</span>
+      </div>
+      <div class="item-caption">
+        <div class="year-mark">2026</div>
+        <div class="item-name">The Window Between Us</div>
+        <div class="item-sub">Original Super 8 footage and film editing</div>
+        <div class="item-tags">
+          <span class="item-tag">FILM</span>
+          <span class="item-tag">INSTALLATION</span>
+        </div>
+      </div>
+    </a>
  
-            <a class="grid-gallery" href="https://kimh764.wixsite.com/hyerin-kim/portfolio-collections/case-study-2/case-study-2" data-aos="fade-up">
-                <img class="grid-item"
-                    src="images/img2-400.jpg"
-                    srcset="images/img2-400.jpg 400w,
-                            images/img2-800.jpg 800w"
-                    alt="">
 
-                    <div class="caption">
-                        <span class="name"></span>
-                        <span class="date">2025</span>
-                      </div>
-            </a>
+    <a class="item" href="#" style="animation-delay:0.12s">
+      <div class="item-img" style="aspect-ratio:3/4;background:#111;">
+        <img src="./images/img1-1600.jpg" alt="Billie">
+        <span class="item-index">02</span>
+      </div>
+      <div class="item-caption">
+        <div class="year-mark">2026</div>
+        <div class="item-name">The Window Between Us<br>
+                                Born in Seoul, 1939</div>
+        <div class="item-sub">Double-sided books reflecting two parallel narratives</div>
+        <div class="item-tags">
+          <span class="item-tag">WRITER</span>
+          <span class="item-tag">BOOK</span>
+        </div>
+      </div>
+    </a>
+  </div>
 
-            
-     <a class="grid-gallery"
-   href="https://kimh764.wixsite.com/hyerin-kim/portfolio-collections/gen-e/gen-e"
-   data-aos="fade-up">
+  <!-- ROW 2: triple -->
+  <div class="grid-row row-triple">
+    <a class="item" href="https://kimh764.wixsite.com/hyerin-kim/portfolio-collections/case-study-2/case-study-2" style="animation-delay:0.1s">
+      <div class="item-img ar-4-3">
+        <img src="./images/img2-800.jpg" alt="Ulama">
+        <span class="item-index">03</span>
+      </div>
+      <div class="item-caption">
+        <div class="year-mark">2025</div>
+        <div class="item-name">Ulama</div>
+        <div class="item-tags"
+        ><span class="item-tag">Identity</span>
+           <span class="item-tag">UX/UI</span>
+      
+      </div>
+      </div>
+    </a>
 
-    <img class="grid-item"
-        src="images/img3-400.jpg"
-        srcset="images/img3-400.jpg 400w,
-                images/img3-800.jpg 800w"
-        alt="">
 
-    <div class="caption">
-        <span class="name"></span>
-        <span class="date">2025</span>
-    </div>
-</a>
 
-          <a class="grid-big-top grid-gallery" href="images/see.jpeg" data-aos="fade-up">
+    <a class="item" href="https://kimh764.wixsite.com/hyerin-kim/portfolio-collections/gen-e/gen-e" style="animation-delay:0.18s">
+      <div class="item-img ar-4-3">
+        <img src="./images/img3-800.jpg" alt="GENERATION ENVIRONMENT">
+        <span class="item-index">04</span>
+      </div>
+      <div class="item-caption">
+        <div class="year-mark">2025</div>
+        <div class="item-name">Generation Environment</div>
+        <div class="item-tags"><span class="item-tag">Digital</span></div>
+      </div>
+    </a>
 
-                    <video class="grid-item" autoplay muted loop playsinline>
-                        <source src="images/video2.mp4" type="video/mp4">
-                    </video>
 
-                    <div class="caption">
-                        <span class="name"></span>
-                        <span class="date">2025</span>
-                    </div>
-                </a>
-            <!-- <a class="grid-gallery" href="images/img6-1600.jpg" data-aos="fade-up">
-                <img class="grid-item"
-                    src="images/img6-400.jpg"
-                    srcset="images/img6-400.jpg 400w,
-                            images/img6-800.jpg 800w"
-                    alt="">
 
-                    <div class="caption">
-                        <span class="name">Hyerin Kim</span>
-                        <span class="date">2025.03.12</span>
-                      </div>
-            </a>
-            <a class="grid-gallery" href="images/img7-1600.jpg" data-aos="fade-up">
-                <img class="grid-item"
-                    src="images/img7-400.jpg"
-                    srcset="images/img7-400.jpg 400w,
-                            images/img7-800.jpg 800w"
-                    alt="English Bay">
+    <a class="item" href="#" style="animation-delay:0.26s">
+      <div class="item-img ar-4-3">
+      <video autoplay muted loop playsinline>
+          <source src="./images/video2.mp4" type="video/mp4">
+        </video>
+        <span class="item-index">05</span>
+      </div>
+      <div class="item-caption">
+        <div class="year-mark">2025</div>
+        <div class="item-name">SEE</div>
+        <div class="item-tags"><span class="item-tag">Web Developm</span></div>
+      </div>
+    </a>
+  </div>
 
-                    <div class="caption">
-                        <span class="name">Hyerin Kim</span>
-                        <span class="date">2025.03.12</span>
-                      </div>
-            </a>
-            <a class="grid-gallery" href="images/img8-1600.jpg" data-aos="fade-up">
-                <img class="grid-item"
-                    src="images/img8-400.jpg"
-                    srcset="images/img8-400.jpg 400w,
-                            images/img8-800.jpg 800w"
-                    alt="">
+  <!-- ROW 3: small left + big right -->
+  <!-- <div class="grid-row row-small-big">
+    <a class="item" href="#" style="animation-delay:0.08s">
+      <div class="item-img ar-1-1">
+        <img src="" alt="">
+        <span class="item-index">06</span>
+      </div>
+      <div class="item-caption">
+        <div class="year-mark">2025</div>
+        <div class="item-name">MoN Takanawa</div>
+        <div class="item-tags"><span class="item-tag">Identity</span><span class="item-tag">Naming</span></div>
+      </div>
+    </a>
 
-                    <div class="caption">
-                        <span class="name">Hyerin Kim</span>
-                        <span class="date">2025.03.12</span>
-                      </div>
-            </a>
-            <a class="grid-gallery" href="images/img9-1600.jpg" data-aos="fade-up">
-                <img class="grid-item"
-                    src="images/img9-400.jpg"
-                    srcset="images/img9-400.jpg 400w,
-                            images/img9-800.jpg 800w"
-                    alt="">
 
-                    <div class="caption">
-                        <span class="name">Hyerin Kim</span>
-                        <span class="date">2025.03.12</span>
-                      </div>
+    <a class="item" href="#" style="animation-delay:0.16s">
+      <div class="item-img ar-16-9">
+        <img src="" alt="">
+        <span class="item-index">07</span>
+      </div>
+      <div class="item-caption">
+        <div class="year-mark">2025</div>
+        <div class="item-name">Gates Foundation</div>
+        <div class="item-sub">A rebrand entering a new chapter of global impact.</div>
+        <div class="item-tags"><span class="item-tag">Identity</span><span class="item-tag">Strategy</span></div>
+      </div>
+    </a>
+  </div> -->
 
-            </a>
-            <a class="grid-big-bottom grid-gallery" href="images/img10-1600.jpg" data-aos="fade-up">
-                <img class="grid-item"
-                    src="images/img10-400.jpg"
-                    srcset="images/img10-400.jpg 400w,
-                            images/img10-800.jpg 800w"
-                    alt="">
 
-                    <div class="caption">
-                        <span class="name">Hyerin Kim</span>
-                        <span class="date">2025.03.12</span>
-                      </div>
 
-            </a>
-            <a class="grid-gallery" href="images/img11-1600.jpg" data-aos="fade-up">
-                <img class="grid-item"
-                    src="images/img11-400.jpg"
-                    srcset="images/img11-400.jpg 400w,
-                            images/img11-800.jpg 800w"
-                    alt="">
-
-                    <div class="caption">
-                        <span class="name">Hyerin Kim</span>
-                        <span class="date">2025.03.12</span>
-                      </div>
-            </a>
-            <a class="grid-gallery" href="images/img12-1600.jpg" data-aos="fade-up">
-                <img class="grid-item"
-                    src="images/img12-400.jpg"
-                    srcset="images/img12-400.jpg 400w,
-                            images/img12-800.jpg 800w"
-                    alt="">
-
-                    <div class="caption">
-                        <span class="name">Hyerin Kim</span>
-                        <span class="date">2025.03.12</span>
-                      </div> -->
-    
-        </main>
+<!-- LOAD MORE -->
+<div class="load-wrap">
+  <button class="load-btn" onclick="this.textContent='Loading…'">Load more projects</button>
+</div>
 
         <footer>
             <p class="footer-link">
@@ -209,7 +181,7 @@
                 
                 <!-- <a href="https://www.instagram.com/outinrin">@outinrin</a> -->
             </p>
-            <p class="copyright"><small>&copy; 2025 Hyerin Kim</small> Hand-coded.</p>
+       
         </footer>
 
         <!-- JavaScript -->
