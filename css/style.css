@@ -317,6 +317,26 @@
     animation: fadeUp 0.6s ease forwards;
   }
 
+
+  /*
+FOOTER
+================================================ */
+.footer-link {
+  position: relative;
+  top: 56px;  
+  text-align: center;
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 12px;
+  color: rgb(116, 116, 116);
+}
+
+.footer-link a:hover {
+    color: #000000;               
+
+}
+
+
   @keyframes fadeUp {
     to { opacity: 1; transform: translateY(0); }
   }
@@ -405,15 +425,10 @@
     .grid-row.row-triple .item:last-child {
       flex: 1 1 100%;
     }
-  }
-
-
-/*
-FOOTER
-================================================ */
-.footer-link {
+  
+    .footer-link {
   position: relative;
-  top: 56px;   /* 아래로 20px 이동 */
+  top: 28px;  
   text-align: center;
   display: block;
   margin-bottom: 0.5rem;
@@ -421,7 +436,6 @@ FOOTER
   color: rgb(116, 116, 116);
 }
 
-.footer-link a:hover {
-    color: #000000;               
+  }
 
-}
+
