@@ -412,12 +412,13 @@
 FOOTER
 ================================================ */
 .footer-link {
+  position: relative;
+  top: 56px;   /* 아래로 20px 이동 */
   text-align: center;
   display: block;
   margin-bottom: 0.5rem;
   font-size: 12px;
   color: rgb(116, 116, 116);
-  font-family: sans-serif;
 }
 
 .footer-link a:hover {
