@@ -333,7 +333,6 @@ FOOTER
 
 .footer-link a:hover {
     color: #000000;               
-
 }
 
 
@@ -404,9 +403,17 @@ FOOTER
     .item-name { font-size: 20px; }
     .item-sub  { font-size: 11px; }
 
-    /* 로드 버튼 */
-    .load-wrap { padding: 36px 20px; }
+    /* 로드 버튼
+    .load-wrap { padding: 36px 20px; } */
+
+      .footer-link {
+    top: 40px; /* 기존 56px보다 작게 */
   }
+
+
+  }
+
+
 
   /* ── 태블릿 (중간) ── */
   @media (min-width: 681px) and (max-width: 960px) {
@@ -425,16 +432,6 @@ FOOTER
     .grid-row.row-triple .item:last-child {
       flex: 1 1 100%;
     }
-  
-    .footer-link {
-  position: relative;
-  top: 28px;  
-  text-align: center;
-  display: block;
-  margin-bottom: 0.5rem;
-  font-size: 12px;
-  color: rgb(116, 116, 116);
-}
 
   }
 
