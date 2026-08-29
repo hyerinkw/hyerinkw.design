@@ -1,0 +1,286 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #fafaf8;
+  --black: #111;
+  --mid: #888;
+  --line: #ddd;
+}
+
+html {
+  font-size: 14px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--black);
+  font-family: "DM Mono", monospace;
+  -webkit-font-smoothing: antialiased;
+  cursor: none;
+}
+
+.cursor {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background: var(--black);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s, height 0.2s, background 0.2s;
+}
+
+.cursor.hov {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid var(--black);
+}
+
+header {
+  position: fixed;
+  inset: 0 0 auto;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  background: var(--bg);
+  z-index: 10;
+  transition: transform 0.35s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+header.hide {
+  transform: translateY(-100%);
+}
+
+.logo {
+  color: var(--black);
+  font-family: "EB Garamond", serif;
+  font-size: 18px;
+  font-style: italic;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 24px;
+}
+
+nav a,
+.back {
+  color: var(--mid);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+
+nav a:hover,
+nav a.on,
+.back:hover {
+  color: var(--black);
+}
+
+.top {
+  padding: 108px 32px 0;
+}
+
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 44px;
+}
+
+.info {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 32px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--line);
+}
+
+.info-left h1 {
+  font-family: "EB Garamond", serif;
+  font-size: clamp(52px, 7vw, 108px);
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  line-height: 0.9;
+}
+
+.desc {
+  max-width: 50ch;
+  margin-top: 18px;
+  color: var(--mid);
+  font-size: 11px;
+  line-height: 1.75;
+}
+
+.info-right {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 3px;
+  text-align: right;
+}
+
+.meta {
+  color: var(--mid);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  line-height: 1.4;
+}
+
+.meta strong {
+  display: block;
+  color: var(--black);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.g {
+  display: grid;
+  gap: 12px;
+  padding: 12px 32px 0;
+}
+
+.g-full {
+  grid-template-columns: 1fr;
+}
+
+.g-half {
+  grid-template-columns: 1fr 1fr;
+}
+
+.g-main-side {
+  grid-template-columns: 2fr 1fr;
+}
+
+.g-side-main {
+  grid-template-columns: 1fr 2fr;
+}
+
+.media {
+  display: block;
+  width: 100%;
+  background: #e5e4df;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.media.on {
+  opacity: 1;
+}
+
+.r-wide {
+  aspect-ratio: 16 / 9;
+}
+
+.r-std {
+  aspect-ratio: 4 / 3;
+}
+
+.r-sq {
+  aspect-ratio: 1 / 1;
+}
+
+.r-tall {
+  aspect-ratio: 3 / 4;
+}
+
+.next {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 48px;
+  padding: 32px;
+  border-top: 1px solid var(--line);
+  color: var(--black);
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.next:hover {
+  opacity: 0.5;
+}
+
+.next-label {
+  margin-bottom: 5px;
+  color: var(--mid);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.next-title {
+  font-family: "EB Garamond", serif;
+  font-size: 28px;
+  font-style: italic;
+  letter-spacing: -0.02em;
+}
+
+@media (max-width: 640px) {
+  .cursor {
+    display: none;
+  }
+
+  body {
+    cursor: auto;
+  }
+
+  header {
+    height: 52px;
+    padding: 0 20px;
+  }
+
+  .top {
+    padding: 82px 20px 0;
+  }
+
+  .info {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .info-right {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+    text-align: left;
+  }
+
+  .g {
+    gap: 7px;
+    padding: 7px 20px 0;
+  }
+
+  .g-half,
+  .g-main-side,
+  .g-side-main {
+    grid-template-columns: 1fr;
+  }
+
+  .next {
+    padding: 28px 20px;
+  }
+}
+
+.r-letter-landscape {
+  aspect-ratio: 11 / 8.5;
+  object-fit: contain;
+}

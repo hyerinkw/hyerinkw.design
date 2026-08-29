@@ -43,3 +43,7 @@
     item.style.animationPlayState = 'paused';
     obs.observe(item);
   });
+
+  
+
+  
