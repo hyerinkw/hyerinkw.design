@@ -6,7 +6,7 @@ const projects = {
   year: '2026',
   type: 'Moving Image · Installation',
   client: 'Independent project',
-  desc: 'Original Super 8 footage and film editing.',
+  desc: 'At the center of the installation, scenes from my daily life are projected onto the sheet of paper inside a typewriter. The typewriter becomes a device for sending an ordinary day as a letter. In this gesture, the present is transformed into a message, and daily routine becomes an act of care. A Super 8 movie projector functions as a medium between past and present, carrying memory through the texture of film. On the wall, a separate projection evokes my grandmother’s loneliness, longing, and the space left by absence.',
   rows: [
     ['g-full', [['video1.mp4', 'r-wide', true]]]
   ],
