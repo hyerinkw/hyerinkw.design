@@ -20,8 +20,8 @@ html {
 }
 
 body {
-  background: var(--bg);
-  color: var(--black);
+  background: var(--black);
+  color: var(--bg);
   font-family: "DM Mono", monospace;
   -webkit-font-smoothing: antialiased;
   cursor: none;
@@ -31,7 +31,7 @@ body {
   position: fixed;
   width: 8px;
   height: 8px;
-  background: var(--black);
+  background: var(--bg);
   border-radius: 50%;
   pointer-events: none;
   z-index: 9999;
@@ -109,7 +109,7 @@ nav a.on,
   justify-content: space-between;
   gap: 32px;
   padding-bottom: 32px;
-  border-bottom: 1px solid var(--line);
+
 }
 
 .info-left h1 {
@@ -123,7 +123,7 @@ nav a.on,
 .desc {
   max-width: 50ch;
   margin-top: 18px;
-  color: var(--mid);
+  color: var(--br);
   font-size: 12px;
   line-height: 1.25;
 }
@@ -135,6 +135,7 @@ nav a.on,
   gap: 10px;
   padding-bottom: 3px;
   text-align: right;
+  
 }
 
 .meta {
@@ -146,7 +147,7 @@ nav a.on,
 
 .meta strong {
   display: block;
-  color: var(--black);
+  color: var(--mid);
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 0;

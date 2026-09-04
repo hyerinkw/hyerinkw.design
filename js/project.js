@@ -55,7 +55,7 @@ const projects = {
     year: "2026",
     type: "Print",
     client: "Independent project",
-    desc: "A print-led exploration of visual rhythm, scale, and celestial imagery.",
+    desc: "Inspired by Hilma af Klint, I envisioned the imagery of the twelve zodiac signs, each carrying its own symbolic meaning. Through this body of work, I sought to translate astrological influences into abstract forms and colors, conveying these messages through a language beyond the literal. By blending spiritual symbolism with geometric composition, I aimed to express the deeper connections between the cosmos and human existence.",
     rows: [
       ["g-full", [["img5-400.jpg", "r-letter"]]]
     ],
