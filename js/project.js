@@ -20,7 +20,7 @@ const projects = {
   client: 'Independent project',
   desc: 'As people grow older, their world can become quieter, smaller, and shaped by absence. This project reflects on longing, memory, and communication with my grandmother, asking how everyday gestures might hold emotional weight across distance. Together, these elements weave two parallel narratives into conversation, holding her life and my attempt to reach her through film, letters, and everyday rituals. The work asks what it means to stay close to someone when distance, time, and silence remain between you. It proposes that the act of reaching toward another person, even without certainty of arrival, is itself a form of closeness. What does it mean to stay close to someone when distance, time, and silence remain between you?',
   rows: [
-    ['g-full', [['book.GIF', 'r-std'] ]]
+   ['g-full', [['web01.jpg']]],['g-full', [['web02.jpg']]],  ['g-full', [['web03.jpg']]], ['g-full', [['web04.jpg']]], ['g-full', [['book.GIF', 'r-std'] ]]
   ],
   next: ['wheres-your-moment', 'Where’s Your Moment?']
 },
