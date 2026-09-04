@@ -44,7 +44,7 @@ const projects = {
     client: "Independent project",
     desc: "A campaign and installation project exploring the small, defining moments that shape our everyday experience.",
     rows: [
-      ["g-full", [["img4-400.jpg", "r-wide"]]],
+      ["g-full", [["img4-4001.jpg", "r-wide"]]],
       ["g-full", [["video3.mp4", "r-wide", true]]]
     ],
     next: ["stellar-symphony", "Stellar Symphony"]
@@ -57,8 +57,7 @@ const projects = {
     client: "Independent project",
     desc: "A print-led exploration of visual rhythm, scale, and celestial imagery.",
     rows: [
-      ["g-full", [["img5-500.jpg", "r-wide"]]],
-      ["g-full", [["1.png", "r-tall"]]]
+      ["g-full", [["img5-400.jpg", "r-letter"]]]
     ],
     next: ["see", "SEE"]
   },
