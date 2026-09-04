@@ -36,7 +36,7 @@ const projects = {
     title: 'Stellar Symphony', year: '2026', type: 'Print', client: 'Independent project',
     desc: 'A print-led exploration of visual rhythm, scale, and celestial imagery.',
     rows: [
-      ['g-full', [['img5-500.jpg', 'r-wide']]], ['g-full', [['1.png', 'r-letter']]], ['g-full', [['2.png', 'r-letter']]],,
+      ['g-full', [['img5-500.jpg', 'r-wide']]], ['g-full', [['1.png', 'r-letter']]], 
 
     ], next: ['see', 'SEE']
   },

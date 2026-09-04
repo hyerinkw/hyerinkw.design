@@ -44,6 +44,16 @@
     obs.observe(item);
   });
 
-  
+  const nameEl = document.getElementById('intro-name');
+  const metaEl = document.getElementById('intro-meta');
+  const bioText = "Hyerin Kim translates story into visual language across film, print, identity, and digital media. She approaches each project as a director, shaping fragmented ideas into a single coherent narrative.BFA in Communication Design, Parsons School of Design.";
+
+  let isOpen = false;
+
+  nameEl.addEventListener('click', () => {
+    isOpen = !isOpen;
+    metaEl.textContent = isOpen ? bioText : '';
+    metaEl.classList.toggle('is-visible', isOpen);
+  });
 
   
