@@ -109,23 +109,8 @@
     line-height: 1.8;
     padding-bottom: 6px;
   }
-    #intro-name {
-    cursor: pointer;
-  }
 
-  .intro-meta {
-    max-width: 480px;
-    font-family: 'EB Garamond', serif;
-    line-height: 1.2;
-    letter-spacing: 0.06em;
-    font-size: 12px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
 
-  .intro-meta.is-visible {
-    opacity: 1;
-  }
   /* ── FILTER ── */
   .filters {
     display: flex;
