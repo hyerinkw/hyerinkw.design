@@ -2,7 +2,6 @@
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --off-red: hwb(0 6% 47%);
     --off : #FAFAF8;
     --black: #111;
     --mid: #888;
@@ -50,9 +49,6 @@
     transition: transform 0.35s cubic-bezier(0.23, 1, 0.32, 1);
   }
   
-  header.hidden {
-    transform: translateY(-100%);
-  }
 
   .logo {
     font-family: 'EB Garamond', serif;
