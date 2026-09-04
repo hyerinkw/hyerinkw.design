@@ -284,3 +284,8 @@ nav a.on,
   aspect-ratio: 11 / 8.5;
   object-fit: contain;
 }
+
+.r-vimeo {
+  aspect-ratio: 1.412 / 1;
+  border: 0;
+}
