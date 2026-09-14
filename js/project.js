@@ -45,7 +45,7 @@ const projects = {
     desc: "A campaign and installation project exploring the small, defining moments that shape our everyday experience.",
     rows: [
       ["g-full", [["img4-4001.jpg", "r-wide"]]],
-      ["g-full", [["video3.mp4", "r-wide", true]]]
+      ["g-full", [["video3.mp4", "r-wide", true]]], ["g-full", [["01SPACE.jpg", "r-wide"]]],
     ],
     next: ["stellar-symphony", "Stellar Symphony"]
   },
