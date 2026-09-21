@@ -16,7 +16,8 @@ const projects = {
           "r-vimeo",
           "vimeo"
         ]]
-      ]
+      ],["g-full", [["002.JPEG", "r-wide"]]],
+      
     ],
     next: ["born-in-seoul-1939", "Born in Seoul, 1939"]
   },
@@ -32,6 +33,7 @@ const projects = {
       ["g-full", [["web02.jpg","r-tall"]]],
       ["g-full", [["web03.jpg","r-tall"]]],
       ["g-full", [["web04.jpg","r-tall"]]],
+      ["g-full", [["001.JPEG","r-std"]]],
       ["g-full", [["book.GIF", "r-std"]]]
     ],
     next: ["wheres-your-moment", "Where’s Your Moment?"]
