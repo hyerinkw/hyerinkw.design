@@ -13,7 +13,7 @@
   body {
     background: var(--off);
     color: var(--black);
-    font-family: 'DM Mono', monospace;
+    font-family: "Helvetica";
     -webkit-font-smoothing: antialiased;
     cursor: none;
   }
