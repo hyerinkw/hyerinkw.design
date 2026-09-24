@@ -86,7 +86,7 @@
 
   .intro h1 {
     font-family: 'EB Garamond', serif;
-    font-size: clamp(24px, 6vw, 68px);
+    font-size: clamp(24px, 6vw, 45px);
     color: var(--off);
     font-weight: 400;
     line-height: 0.92;
@@ -376,6 +376,10 @@ FOOTER
       align-items: flex-start;
       gap: 12px;
     }
+
+    .intro h1 {
+    font-family: 'EB Garamond', serif;
+    font-size: clamp(14px, 6vw, 28px);
     .intro-meta { text-align: left; }
 
     /* 필터 */
