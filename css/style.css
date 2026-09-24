@@ -381,7 +381,8 @@ FOOTER
     font-family: 'EB Garamond', serif;
     font-size: clamp(14px, 6vw, 28px);
     .intro-meta { text-align: left; }
-
+    }
+    
     /* 필터 */
     .filters { padding: 0 20px; }
     .f-btn { padding: 12px 0; margin-right: 20px; font-size: 10px; }
@@ -447,7 +448,5 @@ FOOTER
     }
 
   }
-
-  
 
 
