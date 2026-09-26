@@ -431,8 +431,8 @@ FOOTER
 
   /* ── 태블릿 (중간) ── */
   @media (min-width: 681px) and (max-width: 960px) {
-    header { padding: 18px 24px; }
-    .intro { padding: 110px 24px 36px; }
+    .header { padding: 18px 24px; }
+    .intro { padding: 110px 14px 36px; }
     .filters { padding: 0 24px; }
     .work-grid { padding: 0 24px 80px; }
 
