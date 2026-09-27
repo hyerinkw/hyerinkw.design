@@ -379,7 +379,7 @@ FOOTER
 
     .intro h1 {
     font-family: 'EB Garamond', serif;
-    font-size: clamp(14px, 6vw, 24px);
+    font-size: clamp(2rem, 1.25rem + 3vw, 3.5rem);
     .intro-meta { text-align: left; }
     }
     
