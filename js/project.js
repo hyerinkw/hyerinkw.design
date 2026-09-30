@@ -61,6 +61,35 @@ const projects = {
     rows: [
       ["g-full", [["img5-400.jpg", "r-letter"]]]
     ],
+    next: ["book-one", "Broken Chandelier"]
+  },
+
+  "book-one": {
+    title: "Broken Chandelier",
+    year: "2025",
+    type: "Writer · Bookbinding · Print",
+    client: "Independent project",
+    desc: "Love is not only a shining light, but a complex emotion where anxiety and fractures coexist with beauty. Even what is broken can remain a precious memory.",
+    rows: [
+      ["g-full", [["B01.jpeg", "r-tall"]]],
+      ["g-full", [["B02.jpeg", "r-tall"]]],
+        // ["g-full", [["B05.jpg", "r-wide"]]],
+          ["g-full", [["B06.jpg", "r-wide"]]],
+      // ["g-full", [["B03.jpg", "r-wide"]]],
+       ["g-full", [["BB.GIF", "r-std"]]],
+    ],
+    next: ["book-two", "Fragments of a voice"]
+  },
+
+  "book-two": {
+    title: "Fragments of a voice",
+    year: "2024",
+    type: "Bookbinding · Print",
+    client: "Independent project",
+    desc: "The concept focuses on discovering small pieces of art or stickers found on Accessible Pedestrian Signals (APS) during exploration and conveying the stories behind them to visually impaired or low-vision individuals. APS typically helps pedestrians cross streets by providing audible tones or vibrations, but the visual elements on or around APS are often only accessible to those who can see.",
+    rows: [
+     ["g-full", [["videoTWO.mp4", "r-wide", true]]],
+    ],
     next: ["see", "SEE"]
   },
 
