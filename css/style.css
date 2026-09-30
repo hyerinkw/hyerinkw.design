@@ -367,7 +367,7 @@ FOOTER
     nav a { font-size: 10px; }
 
     /* 숨길 nav 링크 줄이기 */
-    nav a:not(.on):not(:last-child) { display: none; }
+    /* nav a:not(.on):not(:last-child) { display: none; } */
 
     /* 인트로 */
     .intro {
