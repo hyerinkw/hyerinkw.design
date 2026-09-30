@@ -98,7 +98,7 @@ const projects = {
     year: "2026",
     type: "Web Development",
     client: "Independent project",
-    desc: "A web project that brings moving image and editorial visual language into a digital space.",
+    desc: "Nature looks perfect and beautiful on the surface, but beneath it lies a reality shaped by human destruction. This work shows that contrast through a small hole, revealing an ideal landscape that hides the environmental damage behind it.",
     rows: [
       ["g-full", [["see.jpeg", "r-std"]]]
     ],
