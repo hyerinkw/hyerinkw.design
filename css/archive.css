@@ -1,0 +1,162 @@
+   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --off : #fff;
+    --black: #111;
+    --mid: #888;
+    --line: #ddd;
+  }
+  body {
+    background: var(--off);
+    color: var(--black);
+    font-family: "Helvetica";
+    -webkit-font-smoothing: antialiased;
+    cursor: none;
+  }
+ 
+
+
+.cursor {
+  position: fixed;
+  width: 8px; height: 8px;
+  background: #cef0cc;
+  border-radius: 50%;
+  pointer-events: none;    /* 커서가 클릭을 가로채지 않게 */
+  z-index: 9999;
+  transform: translate(-50%, -50%);   /* 마우스 좌표가 원의 중심이 되게 */
+  transition: width 0.2s, height 0.2s, background 0.2s;
+}
+
+.cursor.hovered {          /* 링크/버튼 위에서 커지는 상태 */
+  width: 40px; height: 40px;
+  background: transparent;
+  border: 1px solid var(--black);
+}
+/* ── NAV ── */
+  header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 32px;
+    z-index: 100;
+    background: var(--off);
+    /* border-bottom: 1px solid var(--line); */
+    transition: transform 0.35s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+
+  .logo {
+    font-family: 'EB Garamond', serif;
+    font-size: 18px;
+    font-style: italic;
+    text-decoration: none;
+    color: var(--black);
+    letter-spacing: -0.01em;
+  }
+
+  nav {
+    display: flex;
+    gap: 24px;
+  }
+
+  nav a {
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--black);
+    opacity: 0.45;
+    transition: opacity 0.2s;
+  }
+  nav a:hover, nav a.on { opacity: 1; }
+
+ 
+  
+.a-set { padding-bottom: 14vh; }
+
+  /* ===== 영상처럼 넘어가는 프레임 1개 ===== */
+.a-film {
+  --ratio: 3 / 4;        /* 세로 비율*/
+  --fade: 0s;
+  position: relative;
+  width: min(42%, 520px);   /* 세로로 길어서 너비 */
+  aspect-ratio: var(--ratio);
+  overflow: hidden;
+  background: #1c1c1c;
+}
+  .a-film img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity var(--fade) linear;
+  }
+  .a-film img.on { opacity: 1; }
+
+  /* 번호 (1/6) */
+  .a-count {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 4px 12px;
+    border-radius: 999px;
+    background: rgba(70, 70, 70, 0.75);
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+  }
+
+  /* 진행 막대 */
+  .a-bar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background: #fff;
+    transition: width 0.3s linear;
+  }
+
+  /* 타이틀: 프레임 오른쪽 아래에 겹침 */
+  .a-title {
+    width: 68%;
+    margin-top: -0.6em;
+    position: relative;
+    text-align: right;
+    white-space: nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(28px, 4.6vw, 64px);
+    font-weight: 400;
+    line-height: 1;
+    color: var(--bg);
+  }
+  .a-title span { display: inline-block; transform: translateX(18%); }
+
+  /* 캡션: 양끝 정렬 */
+  .a-caption {
+    margin-top: clamp(40px, 8vw, 120px);
+    color: var(--bg);
+    font-size: clamp(14px, 1.9vw, 24px);
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    text-align: justify;
+    text-align-last: justify;
+  }
+
+  @media (max-width: 640px) {
+    .a-film, .a-title { width: 100%; }
+    .a-title span { transform: none; }
+    .a-caption { text-align-last: left; }
+  }
+
+  @media (max-width: 680px) {
+  .cursor { display: none; }
+  body { cursor: auto; }
+  .f-btn { cursor: pointer; }
+  .load-btn { cursor: pointer; }
+  .item-index { opacity: 1; }   /* hover가 없으니 항상 표시 */
+}
