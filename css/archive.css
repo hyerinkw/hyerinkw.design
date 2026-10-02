@@ -136,6 +136,33 @@
   .item-index { opacity: 1; }   /* hover가 없으니 항상 표시 */
 }
 
+
+/* ===== 모바일: 얇은 투명 메뉴 ===== */
+@media (max-width: 640px) {
+  header {
+    height: 40px;                 /* 기존 약 60px → 40px */
+    padding: 0 16px;
+    background: transparent;      /* 투명 바 */
+    mix-blend-mode: difference;   /* 사진 위에서는 흰색, 흰 배경 위에서는 검정으로 자동 반전 */
+  }
+  .logo {
+    font-size: 15px;
+    color: #fff;
+  }
+  nav { gap: 16px; }
+  nav a {
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    color: #fff;
+  }
+
+  /* 메뉴가 투명해졌으니 히어로 사진을 맨 위부터 */
+  .a-hero {
+    margin-top: 0;
+    height: 100svh;
+  }
+}
+
 /* ===== 첫 화면: 뿌연 히어로 ===== */
 .a-hero {
   position: relative;
@@ -166,7 +193,7 @@
   color: #fff;
 }
 
-/* 히어로 아래 본문 간격 */
+
 main.a-set { padding-top: 48px; }
 
 @media (max-width: 640px) {
