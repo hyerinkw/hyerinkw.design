@@ -122,24 +122,19 @@
   transition: width 0.4s linear;
 }
 
-
-  @media (max-width: 640px) {
-    .a-film, .a-title { width: 100%; }
-
-  }
-
   @media (max-width: 680px) {
   .cursor { display: none; }
-  body { cursor: auto; }
+  .body { cursor: auto; }
   .f-btn { cursor: pointer; }
   .load-btn { cursor: pointer; }
   .item-index { opacity: 1; }   /* hover가 없으니 항상 표시 */
 }
 
 
-/* ===== 모바일: 얇은 투명 메뉴 ===== */
+
 @media (max-width: 640px) {
-  header {
+  .a-film, .a-title { width: 100%; }
+  .header {
     height: 40px;                 /* 기존 약 60px → 40px */
     padding: 0 16px;
     background: transparent;      /* 투명 바 */
@@ -149,6 +144,7 @@
     font-size: 15px;
     color: #fff;
   }
+  .a-hero { margin-top: 52px; height: calc(100svh - 52px); }
   nav { gap: 16px; }
   nav a {
     font-size: 10px;
@@ -193,9 +189,4 @@
   color: #fff;
 }
 
-
 main.a-set { padding-top: 48px; }
-
-@media (max-width: 640px) {
-  .a-hero { margin-top: 52px; height: calc(100svh - 52px); }
-}
