@@ -13,7 +13,6 @@
     -webkit-font-smoothing: antialiased;
     cursor: none;
   }
- 
 
 
 .cursor {
@@ -81,11 +80,12 @@
   --ratio: 3 / 4;        /* 세로 비율*/
   --fade: 0s;
   position: relative;
-  width: min(42%, 520px);   /* 세로로 길어서 너비 */
+  width: min(500%, 600px);   /* 세로로 길어서 너비 */
   aspect-ratio: var(--ratio);
   overflow: hidden;
   background: #1c1c1c;
 }
+
   .a-film img {
     position: absolute;
     inset: 0;
@@ -118,7 +118,7 @@
   height: 2px;
   width: 0;
   background: transparent;
-  transition: width 0.3s linear;
+  transition: width 0.4s linear;
 }
 
   /* 타이틀: 프레임 오른쪽 아래에 겹침 */
