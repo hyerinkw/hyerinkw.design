@@ -1,7 +1,6 @@
-  /* ===== 영상처럼 재생 ===== */
-  const SPEED = 900;   // 한 장당 머무는 시간(ms). 작을수록 빠름
-
-  const film   = document.getElementById('film');
+/* ===== 영상처럼 재생 (필름 여러 개) ===== */
+document.querySelectorAll('.a-film').forEach(film => {
+  const SPEED  = Number(film.dataset.speed) || 900;   // 필름별 속도(ms)
   const frames = [...film.querySelectorAll('img')];
   const count  = film.querySelector('.a-count');
   const bar    = film.querySelector('.a-bar');
@@ -17,11 +16,13 @@
   function play()  { timer = setInterval(() => show(i + 1), SPEED); }
   function pause() { clearInterval(timer); timer = null; }
 
-  film.addEventListener('click', () => (timer ? pause() : play()));
-  bar.style.width = (1 / frames.length * 100) + '%';
+film.addEventListener('click', () => {
+  if (matchMedia('(hover:hover)').matches) { timer ? pause() : play(); }
+  else { film.classList.toggle('clear'); }
+});
 
-  /* '모션 줄이기' 설정을 켠 사람에게는 자동 재생하지 않음 */
   if (!matchMedia('(prefers-reduced-motion: reduce)').matches) play();
+});
 
   /* 커스텀 커서 */
   const cursor = document.querySelector('.cursor');
