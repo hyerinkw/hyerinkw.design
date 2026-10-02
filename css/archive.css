@@ -75,12 +75,13 @@
   
 .a-set { padding-bottom: 14vh; }
 
-  /* ===== 영상처럼 넘어가는 프레임 1개 ===== */
 .a-film {
-  --ratio: 3 / 4;        /* 세로 비율*/
+  --ratio: 3 / 4;            
   --fade: 0s;
   position: relative;
-  width: min(500%, 600px);   /* 세로로 길어서 너비 */
+  display: block;
+  width: min(100%, 600px);   
+  margin: 0;     
   aspect-ratio: var(--ratio);
   overflow: hidden;
   background: #1c1c1c;
@@ -121,36 +122,10 @@
   transition: width 0.4s linear;
 }
 
-  /* 타이틀: 프레임 오른쪽 아래에 겹침 */
-  .a-title {
-    width: 68%;
-    margin-top: -0.6em;
-    position: relative;
-    text-align: right;
-    white-space: nowrap;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: clamp(28px, 4.6vw, 64px);
-    font-weight: 400;
-    line-height: 1;
-    color: var(--bg);
-  }
-  .a-title span { display: inline-block; transform: translateX(18%); }
-
-  /* 캡션: 양끝 정렬 */
-  .a-caption {
-    margin-top: clamp(40px, 8vw, 120px);
-    color: var(--bg);
-    font-size: clamp(14px, 1.9vw, 24px);
-    line-height: 1.3;
-    letter-spacing: -0.01em;
-    text-align: justify;
-    text-align-last: justify;
-  }
 
   @media (max-width: 640px) {
     .a-film, .a-title { width: 100%; }
-    .a-title span { transform: none; }
-    .a-caption { text-align-last: left; }
+
   }
 
   @media (max-width: 680px) {
