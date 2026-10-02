@@ -68,7 +68,7 @@ const projects = {
     title: "Broken Chandelier",
     year: "2025",
     type: "Writer · Bookbinding · Print",
-    client: "Independent project",
+    Paper: "Sand 120 GSM / 32 LB TEXT, Tracing paper 90g/m",
     desc: "Love is not only a shining light, but a complex emotion where anxiety and fractures coexist with beauty. Even what is broken can remain a precious memory.",
     rows: [
       ["g-full", [["B01.jpeg", "r-tall"]]],

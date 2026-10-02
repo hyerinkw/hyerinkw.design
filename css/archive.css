@@ -98,28 +98,28 @@
   .a-film img.on { opacity: 1; }
 
   /* 번호 (1/6) */
-  .a-count {
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    padding: 4px 12px;
-    border-radius: 999px;
-    background: rgba(70, 70, 70, 0.75);
-    color: #fff;
-    font-size: 12px;
-    letter-spacing: 0.04em;
-  }
+.a-count {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: transparent;
+  color: transparent;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  pointer-events: none;
+}
 
-  /* 진행 막대 */
-  .a-bar {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 2px;
-    width: 0;
-    background: #fff;
-    transition: width 0.3s linear;
-  }
+.a-bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background: transparent;
+  transition: width 0.3s linear;
+}
 
   /* 타이틀: 프레임 오른쪽 아래에 겹침 */
   .a-title {
@@ -159,4 +159,41 @@
   .f-btn { cursor: pointer; }
   .load-btn { cursor: pointer; }
   .item-index { opacity: 1; }   /* hover가 없으니 항상 표시 */
+}
+
+/* ===== 첫 화면: 뿌연 히어로 ===== */
+.a-hero {
+  position: relative;
+  margin-top: 60px;                 /* 고정 헤더 높이 */
+  height: calc(100svh - 60px);
+  overflow: hidden;
+  background: #111;
+}
+.a-hero img {
+  position: absolute;
+  inset: -60px;                     /* blur 가장자리가 하얗게 번지는 것 방지 */
+  width: calc(100% + 120px);
+  height: calc(100% + 120px);
+  object-fit: cover;
+  filter: blur(40px);
+  will-change: filter;
+}
+.a-hero p {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 0 20px;
+  text-align: center;
+  font-family: "EB Garamond", serif;
+  font-size: clamp(14px, 1.3vw, 24px);
+  letter-spacing: -0.01em;
+  color: #fff;
+}
+
+/* 히어로 아래 본문 간격 */
+main.a-set { padding-top: 48px; }
+
+@media (max-width: 640px) {
+  .a-hero { margin-top: 52px; height: calc(100svh - 52px); }
 }

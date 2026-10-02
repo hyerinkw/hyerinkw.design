@@ -43,3 +43,18 @@
     lastY = y;
   });
 
+
+  /* 스크롤하면 뿌연 첫 화면이 선명해짐 */
+const hero = document.getElementById('hero');
+const heroImg = hero.querySelector('img');
+const heroTxt = hero.querySelector('p');
+const MAX_BLUR = 40;   // 처음 뿌연 정도(px)
+const CLEAR_AT = 0.6;  // 히어로 높이의 몇 % 스크롤하면 완전히 선명해지는지
+
+function heroUpdate() {
+  const p = Math.min(window.scrollY / (hero.offsetHeight * CLEAR_AT), 1);
+  heroImg.style.filter = 'blur(' + (MAX_BLUR * (1 - p)) + 'px)';
+  heroTxt.style.opacity = Math.max(1 - p * 1.4, 0);
+}
+window.addEventListener('scroll', heroUpdate, { passive: true });
+heroUpdate();
