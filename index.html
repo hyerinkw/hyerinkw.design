@@ -28,18 +28,27 @@
   <a class="logo" href="./index.html">Hyerin KW</a>
   <nav>
     <a href="#" class="on">Work</a>
-    <a href="archive.html">Archive</a> 
-    <a href="https://www.linkedin.com/in/hyerinkw/">Linkedin</a>   
+    <a href="archive.html">Archive</a>
+    <a href="https://www.linkedin.com/in/hyerinkw/">Linkedin</a>
   </nav>
 </header>
 
-<!-- INTRO -->
-<div class="intro">
-  <h1 id="intro-name"><em>
+
+<section class="hero" id="hero">
+
+  <video autoplay muted loop playsinline preload="auto">
+    <source src="./images/video1.mp4" type="video/mp4">
+  </video>
+
+  <h1 class="hero-title"><em>
     I love turning emotions and moments that words can't fully capture into a visual language.</em></h1>
-</div>
+<!-- 
+  <a class="hero-scroll" href="#page">↓</a> -->
+</section>
+<div class="hero-spacer"></div>
 
-
+<!-- 기존 레이아웃 전체 (스크롤하면 비디오 위로 올라옴) -->
+<main class="page" id="page">
 
 
 <!-- GRID -->
@@ -62,7 +71,7 @@
         </div>
       </div>
     </a>
- 
+
 
     <a class="item" href="project.html?id=born-in-seoul-1939" style="animation-delay:0.12s">
       <div class="item-img" style="aspect-ratio:3/4;background:#111;">
@@ -87,7 +96,7 @@
     <a class="item" href="project.html?id=wheres-your-moment" style="animation-delay:0.08s">
       <div class="item-img ar-1-1">
         <img src="./images/img4-400.jpg" alt="">
-   
+
       </div>
       <div class="item-caption">
         <div class="item-name">Where’s Your Moment?</div>
@@ -121,7 +130,7 @@
         <div class="item-tags"
         ><span class="item-tag">brand Identity</span>
            <span class="item-tag">UX/UI</span>
-      
+
       </div>
       </div>
     </a>
@@ -195,7 +204,7 @@
 
         <footer>
             <p class="footer-link">
-                <!-- <a href="https://www.linkedin.com/in/hyerinkw/">Linkedin</a>   
+                <!-- <a href="https://www.linkedin.com/in/hyerinkw/">Linkedin</a>
               &nbsp;&nbsp; 공백 두 칸 -->
                 <!-- <a href="https://www.instagram.com/hyerinkw">@hyerinkw</a>  -->
                             &nbsp;&nbsp; <!-- 공백 두 칸 -->
@@ -204,8 +213,11 @@
                  <!-- <a href="https://www.instagram.com/outinrin">Hello!</a>  -->
                   ©2026 Hyerin Kim
             </p>
-     
+
         </footer>
+
+</div><!-- /.work-grid -->
+</main><!-- /.page -->
 
         <!-- JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.3.2/luminous.min.js"></script>

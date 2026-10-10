@@ -1,5 +1,4 @@
-
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
     --off : #fff;
@@ -46,9 +45,14 @@
     z-index: 100;
     background: var(--off);
     /* border-bottom: 1px solid var(--line); */
-    transition: transform 0.35s cubic-bezier(0.23, 1, 0.32, 1);
+    transition:
+      transform 0.35s cubic-bezier(0.23, 1, 0.32, 1),
+      background-color 0.3s ease;
   }
-  
+
+  /* 스크롤 내리면 헤더 숨김 (script.js가 .hidden 추가) */
+  header.hidden { transform: translateY(-100%); }
+
 
   .logo {
     font-family: 'EB Garamond', serif;
@@ -57,6 +61,7 @@
     text-decoration: none;
     color: var(--black);
     letter-spacing: -0.01em;
+    transition: color 0.3s ease;
   }
 
   nav {
@@ -71,11 +76,113 @@
     text-decoration: none;
     color: var(--black);
     opacity: 0.45;
-    transition: opacity 0.2s;
+    transition: opacity 0.2s, color 0.3s ease;
   }
   nav a:hover, nav a.on { opacity: 1; }
 
-  /* ── INTRO ── */
+  /* 비디오 위에서는 투명 헤더 + 흰 글씨 */
+  header.over-hero { background: transparent; }
+  header.over-hero .logo,
+  header.over-hero nav a { color: #fff; }
+  header.over-hero nav a { opacity: 0.75; }
+  header.over-hero nav a:hover,
+  header.over-hero nav a.on { opacity: 1; }
+
+  /* ── FULLSCREEN VIDEO HERO ── */
+  .hero {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    height: 100svh;            /* 모바일 주소창 대응 */
+    z-index: 0;
+    overflow: hidden;
+    background: #000;
+  }
+
+  .hero video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* 영상을 조금 뿌옇게: 블러 + 살짝 낮춘 채도/대비 + 약간 밝게 */
+    filter: blur(3px) saturate(0.85) contrast(0.92) brightness(1.00);
+    transform: scale(1.05);   /* 블러로 생기는 가장자리 번짐을 화면 밖으로 */
+  }
+
+  /* 문구(아래)와 헤더(위)가 밝은 영상에서도 잘 읽히도록 살짝 어둡게 */
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(to bottom, rgba(0,0,0,0.28), rgba(0,0,0,0) 22%),
+      linear-gradient(to top, rgba(0,0,0,0.45), rgba(0,0,0,0) 55%);
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  /* 비디오 위 문구 (기존 h1) */
+  .hero-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   /* 화면 정중앙 */
+    width: calc(100% - 64px);
+    max-width: 520px;
+    text-align: center;
+    z-index: 2;
+    font-family: 'EB Garamond', serif;
+    font-size: clamp(18px, 2vw, 648px);
+    font-weight: 400;
+    line-height: 1.02;
+    letter-spacing: -0.03em;
+    color: #cef0cc;
+    text-shadow: 0 2px 24px rgba(0,0,0,0.35);
+    /* 20초 뒤 1.2초에 걸쳐 서서히 사라짐 */
+    animation: heroTitleOut 1.2s ease 20s forwards;
+  }
+  @keyframes heroTitleOut {
+    to { opacity: 0; visibility: hidden; }
+  }
+
+  .hero-scroll {
+    position: absolute;
+    left: 50%;
+    bottom: 28px;
+    z-index: 2;
+    transform: translateX(-50%);
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #fff;
+    opacity: 0.85;
+    text-decoration: none;
+    animation: heroBob 1.8s ease-in-out infinite;
+  }
+  @keyframes heroBob {
+    0%, 100% { transform: translate(-50%, 0); }
+    50%      { transform: translate(-50%, 6px); }
+  }
+
+  /* 비디오 높이만큼 비워두는 공간 */
+  .hero-spacer {
+    height: 100vh;
+    height: 100svh;
+  }
+
+  /* 기존 레이아웃 전체: 비디오 위로 올라오는 레이어 */
+  .page {
+    position: relative;
+    z-index: 1;
+    background: var(--off);
+  }
+
+  /* 인트로(h1)가 없어졌으니 그리드 위쪽에 헤더 높이만큼 여백 */
+  .page > .work-grid { padding-top: 90px; }
+
+  /* ── INTRO (다른 페이지에서 쓸 수 있어 유지) ── */
   .intro {
     padding: 140px 32px 48px;
     display: flex;
@@ -92,7 +199,7 @@
     line-height: 0.92;
     letter-spacing: -0.03em;
   }
-  
+
   #intro-name {
     transition: color 0.3s ease;
     cursor: default;
@@ -101,21 +208,6 @@
   #intro-name:hover {
     color: #333;
   }
-
-.hero-video {
-  width: 100%;
-  height: 100vh;
-  min-height: 600px;
-  padding: 0 32px;
-  background: var(--off);
-}
-
-.hero-video iframe {
-  display: block;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
 
   /* ── FILTER ── */
   .filters {
@@ -326,13 +418,18 @@
     animation: fadeUp 0.6s ease forwards;
   }
 
+  /* 메인(히어로 있는 페이지)에서는 화면에 들어올 때 시작 — script.js가 실행시킴 */
+  .hero ~ .page .item {
+    animation-play-state: paused;
+  }
+
 
   /*
 FOOTER
 ================================================ */
 .footer-link {
   position: relative;
-  top: 56px;  
+  top: 56px;
   text-align: center;
   display: block;
   margin-bottom: 0.5rem;
@@ -341,7 +438,7 @@ FOOTER
 }
 
 .footer-link a:hover {
-    color: #000000;               
+    color: #000000;
 }
 
 
@@ -369,6 +466,15 @@ FOOTER
     /* 숨길 nav 링크 줄이기 */
     /* nav a:not(.on):not(:last-child) { display: none; } */
 
+    /* 비디오 위 문구 */
+    .hero-title {
+      width: calc(100% - 40px);
+      font-size: clamp(26px, 2vw, 40px);
+    }
+
+    /* 그리드 위 여백 */
+    .page > .work-grid { padding-top: 76px; }
+
     /* 인트로 */
     .intro {
       padding: 90px 20px 28px;
@@ -382,7 +488,7 @@ FOOTER
     font-size: clamp(2rem, 1.25rem + 3vw, 3.5rem);
     .intro-meta { text-align: left; }
     }
-    
+
     /* 필터 */
     .filters { padding: 0 20px; }
     .f-btn { padding: 12px 0; margin-right: 20px; font-size: 10px; }
@@ -435,6 +541,7 @@ FOOTER
     .intro { padding: 110px 14px 36px; }
     .filters { padding: 0 24px; }
     .work-grid { padding: 0 24px 80px; }
+    .page > .work-grid { padding-top: 90px; }
 
     /* triple → 2+1 */
     .grid-row.row-triple {
@@ -448,5 +555,3 @@ FOOTER
     }
 
   }
-
-
