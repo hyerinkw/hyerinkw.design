@@ -5,7 +5,7 @@ const projects = {
     title: "The Window Between Us",
     year: "2026",
     type: "Moving Image · Installation",
-    client: "Independent project",
+    Tool: "Film  · After Effect ",
     desc: "At the center of the installation, scenes from my daily life are projected onto the sheet of paper inside a typewriter. The typewriter becomes a device for sending an ordinary day as a letter. In this gesture, the present is transformed into a message, and daily routine becomes an act of care. A Super 8 movie projector functions as a medium between past and present, carrying memory through the texture of film. On the wall, a separate projection evokes my grandmother’s loneliness, longing, and the space left by absence.",
     rows: [
       ["g-full", [["video1.mp4", "r-wide", true]]],
@@ -26,7 +26,7 @@ const projects = {
     title: "Born in Seoul, 1939",
     year: "2026",
     type: "Writer · Bookbinding · Print",
-    client: "Independent project",
+    Tool: "Indesign · Hand made a Book box and Book",
     desc: "As people grow older, their world can become quieter, smaller, and shaped by absence. This project reflects on longing, memory, and communication with my grandmother, asking how everyday gestures might hold emotional weight across distance. Together, these elements weave two parallel narratives into conversation, holding her life and my attempt to reach her through film, letters, and everyday rituals. The work asks what it means to stay close to someone when distance, time, and silence remain between you. It proposes that the act of reaching toward another person, even without certainty of arrival, is itself a form of closeness. What does it mean to stay close to someone when distance, time, and silence remain between you?",
     rows: [
       ["g-full", [["web01.jpg","r-tall"]]],
@@ -43,7 +43,7 @@ const projects = {
     title: "Where’s Your Moment?",
     year: "2026",
     type: "Campaign · Installation",
-    client: "Independent project",
+    Tool: "Indesign · Wood box",
     desc: "A campaign and installation project exploring the small, defining moments that shape our everyday experience.",
     rows: [
       ["g-full", [["img4-4001.jpg", "r-wide"]]],
@@ -56,7 +56,7 @@ const projects = {
     title: "Stellar Symphony",
     year: "2026",
     type: "Print",
-    client: "Independent project",
+    Tool: "Indesign · Illustration",
     desc: "Inspired by Hilma af Klint, I envisioned the imagery of the twelve zodiac signs, each carrying its own symbolic meaning. Through this body of work, I sought to translate astrological influences into abstract forms and colors, conveying these messages through a language beyond the literal. By blending spiritual symbolism with geometric composition, I aimed to express the deeper connections between the cosmos and human existence.",
     rows: [
       ["g-full", [["img5-400.jpg", "r-letter"]]]
@@ -68,7 +68,7 @@ const projects = {
     title: "Broken Chandelier",
     year: "2025",
     type: "Writer · Bookbinding · Print",
-    Paper: "Sand 120 GSM / 32 LB TEXT, Tracing paper 90g/m",
+    Tool: "Indesign · Photoshop",
     desc: "Love is not only a shining light, but a complex emotion where anxiety and fractures coexist with beauty. Even what is broken can remain a precious memory.",
     rows: [
       ["g-full", [["B01.jpeg", "r-tall"]]],
@@ -85,7 +85,7 @@ const projects = {
     title: "Fragments of a voice",
     year: "2024",
     type: "Bookbinding · Print",
-    client: "Independent project",
+    Tool: "Indesign · Photoshop",
     desc: "The concept focuses on discovering small pieces of art or stickers found on Accessible Pedestrian Signals (APS) during exploration and conveying the stories behind them to visually impaired or low-vision individuals. APS typically helps pedestrians cross streets by providing audible tones or vibrations, but the visual elements on or around APS are often only accessible to those who can see.",
     rows: [
      ["g-full", [["videoTWO.mp4", "r-wide", true]]],
@@ -97,7 +97,7 @@ const projects = {
     title: "SEE",
     year: "2026",
     type: "Web Development",
-    client: "Independent project",
+    Tool: "CSS HTNL JS",
     desc: "Nature looks perfect and beautiful on the surface, but beneath it lies a reality shaped by human destruction. This work shows that contrast through a small hole, revealing an ideal landscape that hides the environmental damage behind it.",
     rows: [
       ["g-full", [["see.jpeg", "r-std"]]]
