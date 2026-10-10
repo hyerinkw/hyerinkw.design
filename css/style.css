@@ -467,10 +467,12 @@ FOOTER
     /* nav a:not(.on):not(:last-child) { display: none; } */
 
     /* 비디오 위 문구 */
-    .hero-title {
-      width: calc(100% - 40px);
-      font-size: clamp(26px, 2vw, 40px);
-    }
+  .hero-title {
+  width: calc(100% - 40px);
+  /* 화면 너비에 맞춰 글자 크기가 줄어들어 항상 2줄 (최대 27px) */
+  font-size: min(calc((100vw - 40px) / 19), 27px);
+  text-wrap: balance;
+  }
 
     /* 그리드 위 여백 */
     .page > .work-grid { padding-top: 76px; }
