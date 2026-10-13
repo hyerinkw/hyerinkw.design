@@ -133,11 +133,11 @@
     text-align: center;
     z-index: 2;
     font-family: 'EB Garamond', serif;
-    font-size: clamp(18px, 2vw, 648px);
+    font-size: clamp(18px, 2vw, 28px);
     font-weight: 400;
     line-height: 1.02;
     letter-spacing: -0.03em;
-    color: #cef0cc;
+    color: #fff;
     text-shadow: 0 2px 24px rgba(0,0,0,0.35);
     /* 20초 뒤 1.2초에 걸쳐 서서히 사라짐 */
     animation: heroTitleOut 1.2s ease 20s forwards;
@@ -190,15 +190,7 @@
     align-items: flex-end;
     /* border-bottom: 1px solid var(--line); */
   }
-
-  .intro h1 {
-    font-family: 'EB Garamond', serif;
-    font-size: clamp(24px, 6vw, 45px);
-    color: var(--off);
-    font-weight: 400;
-    line-height: 0.92;
-    letter-spacing: -0.03em;
-  }
+ 
 
   #intro-name {
     transition: color 0.3s ease;
@@ -470,7 +462,7 @@ FOOTER
   .hero-title {
   width: calc(100% - 40px);
   /* 화면 너비에 맞춰 글자 크기가 줄어들어 항상 2줄 (최대 27px) */
-  font-size: min(calc((100vw - 40px) / 19), 27px);
+  font-size: min(calc((60vw - 20px) / 16), 24px);
   text-wrap: balance;
   }
 
@@ -487,7 +479,7 @@ FOOTER
 
     .intro h1 {
     font-family: 'EB Garamond', serif;
-    font-size: clamp(2rem, 1.25rem + 3vw, 3.5rem);
+    font-size:  clamp(14px, 1rem + 1vw, 14px);
     .intro-meta { text-align: left; }
     }
 
@@ -544,7 +536,12 @@ FOOTER
     .filters { padding: 0 24px; }
     .work-grid { padding: 0 24px 80px; }
     .page > .work-grid { padding-top: 90px; }
-
+    .hero-title {
+  width: calc(100% - 40px);
+  /* 화면 너비에 맞춰 글자 크기가 줄어들어 항상 2줄 (최대 27px) */
+  font-size: min(calc((60vw - 20px) / 16), 24px);
+  text-wrap: balance;
+  }
     /* triple → 2+1 */
     .grid-row.row-triple {
       flex-wrap: wrap;
