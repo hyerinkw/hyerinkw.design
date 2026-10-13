@@ -1,5 +1,5 @@
 const hdr  = document.querySelector('header');
-  const hero = document.getElementById('hero');   // 메인 페이지에만 있음
+const hero = document.getElementById('hero'); 
 
   // header: 비디오 위에서는 투명 + 흰 글씨 / 스크롤 내리면 숨김, 올리면 표시
   let lastY = 0;
@@ -71,6 +71,11 @@ const hdr  = document.querySelector('header');
         const tryPlay = () => heroVideo.play().catch(() => {});
         tryPlay();
         document.addEventListener('touchstart', tryPlay, { once: true });
+        heroVideo.muted = true;
+         heroVideo.addEventListener('pause', () => { if (!document.hidden) tryPlay(); });
+         heroVideo.addEventListener('ended', () => { heroVideo.currentTime = 0; tryPlay(); });
+          heroVideo.addEventListener('stalled', tryPlay);
+          document.addEventListener('visibilitychange', () => { if (!document.hidden) tryPlay(); });
       }
     }
 
