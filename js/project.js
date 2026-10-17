@@ -43,7 +43,7 @@ const projects = {
     title: "Where’s Your Moment?",
     year: "2026",
     type: "Campaign · Installation",
-    Tool: "Indesign · Wood box",
+    Tool: "Indesign · Woodworking",
     desc: "A campaign and installation project exploring the small, defining moments that shape our everyday experience.",
     rows: [
       ["g-full", [["img4-4001.jpg", "r-wide"]]],
@@ -97,7 +97,7 @@ const projects = {
     title: "SEE",
     year: "2026",
     type: "Web Development",
-    Tool: "CSS HTNL JS",
+    Tool: "D3 JS · CSS · HTNL · JS ",
     desc: "Nature looks perfect and beautiful on the surface, but beneath it lies a reality shaped by human destruction. This work shows that contrast through a small hole, revealing an ideal landscape that hides the environmental damage behind it.",
     rows: [
       ["g-full", [["see.jpeg", "r-std"]]]
@@ -118,14 +118,14 @@ info.innerHTML = `
   <div class="info-right">
     <div class="meta">Year<strong></strong></div>
     <div class="meta">Type<strong></strong></div>
-    <div class="meta">Client<strong></strong></div>
+    <div class="meta">Tool<strong></strong></div>
   </div>
 `;
 
 info.querySelector("h1").textContent = project.title;
 info.querySelector(".desc").textContent = project.desc;
 
-[project.year, project.type, project.client].forEach((value, index) => {
+[project.year, project.type, project.Tool].forEach((value, index) => {
   info.querySelectorAll(".meta strong")[index].textContent = value;
 });
 
